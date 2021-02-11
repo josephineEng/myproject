@@ -50,6 +50,9 @@
         <a href="/funds-list">
             Treasury
         </a><br><br>
+        <a href="/hierachy">
+            hierarchy
+        </a><br><br>
     </nav>
 
     <h2>Regional referral hospitals</h2>

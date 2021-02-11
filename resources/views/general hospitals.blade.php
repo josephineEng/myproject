@@ -52,6 +52,9 @@
         <a href="/funds-list">
             Treasury
         </a><br><br>
+        <a href="/hierachy">
+            hierarchy
+        </a><br><br>
     </nav>
 
     <h2>General hospitals</h2>

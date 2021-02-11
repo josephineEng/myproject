@@ -15,7 +15,8 @@
             top: 2cm;
             left: 30%;
             font-family: Arial;
-            background-image:<img src="{{URL::to('/assets/image.jpg')}}">
+            background-image: url('{{asset('css/image.jpg/')}}');
+            background-size: cover;
         }
         
         div.main {

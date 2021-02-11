@@ -8,20 +8,19 @@
 
     <title>
         CMARS Login Page
-    </title>
-
+    
+</title>
     <style>
-       body {
-
-        position: relative;
+        body {
+            position: relative;
             top: 2cm;
             left: 30%;
-            text-align: center;
             font-family: Arial;
-            background-image: <img src="{{URL::to('/assets/image.jpg')}}">
-            
+            background-image: url('{{asset('css/image.jpg/')}}');
+            background-size: cover;
+        }
         
-        div {
+        div.main {
             border: 1px solid;
             padding: 0px 0px 30px;
             width: 40%;
@@ -36,7 +35,7 @@
         }
 
         div.sub,label{
-            padding :1cm
+            padding-left: 1cm;
         }
 
         h1 {
@@ -58,25 +57,15 @@
             border-radius: 4px;
         }
 
-        #login {
-            background-color: #069817;
-        }
-        #register {
-            background-color: #808080;
-        }
-        
-      input {
-            font-size: large;
-            width: 60%;
+        button {
+            background-color: #ff6a00;
+            width: 50%;
             border-radius: 4px;
         }
-        div.main {
-            border: 1px solid;
-            padding: 0px 0px 30px;
-            width: 40%;
-            background: green;
-            font-size: medium;
+        #cancel {
+            background-color: #069817;
         }
+
     </style>
 </head>
 

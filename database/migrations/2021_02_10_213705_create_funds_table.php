@@ -18,7 +18,7 @@ class CreateFundsTable extends Migration
             $table->string('fund_source');
             $table->integer('Amount');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**

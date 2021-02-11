@@ -79,12 +79,20 @@ Route::get('/signout', function () {
     return view('signout');
 });
  
+Route::get('/hierarchy', function () {
+    return view('hierarchy');
+});
+
+Route::get('/image', function () {
+    return view('image');
+});
+ 
 
 route::get('/add-health_officer',[health_officerController::class,'addhealth_officer'])->name('health_officer.add');
 route::post('/add-health_officer',[health_officerController::class,'savehealth_officer'])->name('save.health_officer');
 route::get('/health_officer-list',[health_officerController::class,'health_officerlist'])->name('health_officer.list');
 route::get('/add-funds',[fundController::class,'addfund'])->name('fund.add');
-route::post('/add-funds',[fundController::class,'savefunds'])->name('save.fund');
+route::post('/add-funds',[fundController::class,'savefund'])->name('save.fund');
 route::get('/funds-list',[fundController::class,'fundlist'])->name('funds.list');
 
 route::get('/edit-health_officer/{$id}',[health_officerController::class,'edithealth_officer'])->name('health_officer.edit');

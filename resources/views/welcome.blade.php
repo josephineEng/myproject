@@ -140,7 +140,8 @@
             left: 30%;
             font-family: Arial;
             align:center;
-            background-color:white; 
+            background-image:url('{{asset('css/image.jpg/')}}');
+            background-size: cover;
         }
             a{
             font-weight: bold;

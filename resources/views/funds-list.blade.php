@@ -46,6 +46,7 @@
     <a href="/donations graph" class="indent">
         Donations graph
     </a><br>
+    
 </nav>
 
 <h2>Treasury</h2>

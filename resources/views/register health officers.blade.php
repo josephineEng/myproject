@@ -45,6 +45,9 @@
         <a href="/funds-list">
             Treasury
         </a><br><br>
+        <a href="/hierachy">
+            hierarchy
+        </a><br><br>
     </nav>
 
     <h2>Register health officers</h2>
