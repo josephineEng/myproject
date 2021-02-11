@@ -1,18 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+USE DB;
 use Illuminate\Http\Request;
-use DB;
-$funds;
+
 class fundController extends Controller
 {
-   
-    public function addfunds()
-    {
-     return view ('add-funds');  //
-    }
-    
+    public function addfund(){
+        return view ("add-funds");
+    }   
     public function savefund(Request $request)
     {
      DB::table('funds')->insert([
@@ -25,6 +21,8 @@ class fundController extends Controller
     {
       $funds = DB::table('funds') ->get();
       return view('funds-list',compact('funds'));
-    }//
+    }
   }
   
+
+
