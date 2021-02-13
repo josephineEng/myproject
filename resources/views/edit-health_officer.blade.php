@@ -48,15 +48,15 @@
     <h2>Register health officers</h2>
 
 <div class="main">
-@if(Session::has('health_officer_update'))
+@if(Session::has('health_officer_delete'))
 <span> {{Session::get('health_officer_update')}}</span>
 @endif
     <form method="post" action="{{route('update.health_officer')}}">
     @csrf
-            <input type="hidden" name="id"value="{{$health_officer ->id}}"><br>
-    NIN    :<br><input type="text"name="NIN"value="{{$health_officer ->NIN}}"><br>
-    Name   :<br><input type="text"name="Name"value="{{$health_officer ->Name}}"><br>
-    Gender :<br><input type="text"name="Gender"value="{{$health_officer ->Gender}}"><br>
+            <input type="hidden" name="id"value="{{$health_officers ->id}}"><br>
+    NIN    :<br><input type="text"name="NIN"value="{{$health_officers ->NIN}}"><br>
+    Name   :<br><input type="text"name="Name"value="{{$health_officers ->Name}}"><br>
+    Gender :<br><input type="text"name="Gender"value="{{$health_officers ->Gender}}"><br>
     <input type="submit"value="ADD">
     </form>
     </div>

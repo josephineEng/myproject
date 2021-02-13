@@ -64,11 +64,11 @@
                 <th>Name</th>
                 <th>Gender</th>
                 <th>Case Type</th>
-                <th>Symptom Category</th>
-                <th> Enrolloment Date</th>
+                <th>Category</th>
+                <th>DateIn</th>
                 <th> Officer</th>
                 <th> Hospital</th>
-                <th> Release Date</th>
+                <th>  DateOut</th>
             </tr>
 
             <tr>
@@ -102,7 +102,9 @@
         </select>
         <br><br>
 
-        Toatl number of patients:
+        Toatl number of patients:<div class="total">
+                    
+               
         <input type="text" name="pateintsNo">
         <br><br>
     </div>

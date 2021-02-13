@@ -37,7 +37,8 @@ class health_officerController extends Controller
         return back() ->with('health_officer_update','health_officer updated successfuly');
       }
       public function deletehealth_officer($id){
-    
+    DB::table('health_officers')->where('id',$id)->delete();
+    return back()->with('health_officer_delete','Health officer deleted');
       }
     
     }

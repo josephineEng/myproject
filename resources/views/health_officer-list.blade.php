@@ -47,8 +47,13 @@
     </nav>
     <div class="main">
 
-<table>
-<a style ="float:right" href="{{route('health_officer.add')}}">ADD HEALTH_OFFICER</a>
+   
+
+
+<table> 
+@if(Session::has('health_officer_add'))
+<span> {{Session::get('health_officer_add')}}</span>
+@endif
         <thead>
                 <tr>
                    <th>id</th>
@@ -76,12 +81,14 @@
                    <td></td>
                    <td></td>
                     <td>
-                    <a href ="/edit-health_officer/{{$health_officer->id}}">Edit</a>
-                    <a href ="/delete-health_officer/{{$health_officer->id}}" >Delete</a>
+                    <a href ="/edit-health_officer/{{$health_officer ->id}}">Edit</a><br>
+                    <a href ="/delete-health_officer/{{$health_officer ->id}}">Delete</a>
                    </td>
                 </tr>
             @endforeach
-            </table>
+            </table><br>
+            <a style="background-color:grey" href="{{route('health_officer.add')}}">ADD HEALTH_OFFICER</a>
+
             </div>
             </body>
 </html>
