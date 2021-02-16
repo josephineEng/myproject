@@ -76,6 +76,7 @@
                 <th>id</th>
                 <th>Well-wisher</th>
                 <th>Donation</th>
+                <th>Action</th>
             </tr>
 </thead>
         
@@ -87,9 +88,15 @@
                  </td>
               <td>{{$fund ->Amount}}
                  </td>
+                 <td>
+                    <a href ="/edit-funds/{{$fund->id}}">Edit</a><br>
+                    <a href ="/delete-funds/{{$fund ->id}}">Delete</a>
+                   </td>
                 </tr>
             @endforeach
 </table>
+<br>
+<a style="background-color:grey" href="{{route('fund.add')}}">ADD FUNDS</a>
 <br><br>
         Total amount in treasury:
         <input type="text" name="treasuryAmount">

@@ -99,5 +99,6 @@ route::get('/edit-health_officer/{id}',[health_officerController::class,'edithea
 route::get('/delete-health_officer/{id}',[health_officerController::class,'deletehealth_officer'])->name('health_officer.delete');
 route::post('/update-health_officer',[health_officerController::class,'updatehealth_officer'])->name('update.health_officer');
 
-route::get('/edit-funds',[fundController::class,'editfund'])->name('edit.fund');
-route::get('/funds-list',[fundController::class,'fundlist'])->name('funds.list');
+route::get('/edit-funds/{id}',[fundController::class,'editfund'])->name('edit.fund');
+route::get('/delete-funds/{id}',[fundController::class,'deletefund'])->name('delete.fund');
+route::post('/update-fund',[fundController::class,'updatefund'])->name('update.fund');

@@ -22,6 +22,25 @@ class fundController extends Controller
       $funds = DB::table('funds') ->get();
       return view('funds-list',compact('funds'));
     }
+    public function editfund($id){
+      $funds =DB::table('funds') ->where('id',$id) ->first();
+      return view('edit-funds',compact('funds'));
+  
+    }
+   
+    public function updatefund (Request$request){
+      DB::table('funds')-> where('id',$request->id)->update([
+        'fund_source'=>$request->fund_source,
+        'Amount'=>$request->Amount
+      
+      ]);
+      return back() ->with('fund-update','fund updated successfuly');
+    }
+
+    public function deletefund($id){
+  DB::table('funds')->where('id',$id)->delete();
+  return back()->with('fund-delete','fund deleted');
+    }
   }
   
 
