@@ -68,7 +68,7 @@
         </div>
         <br>
         <table>
-            <tr>
+            <tr><th>ID</th>
                 <th>Hospital name</th>
                 <th>Location</th>
                 <th>Number of health workers</th>
@@ -76,15 +76,25 @@
                 <th>Contact</th>
                 <th>Head</th>
             </tr>
-
+            @foreach($general_hospitals as $hospital)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <td>{{$hospital ->id}}
+                 </td>
+              <td>{{$hospital ->Hospital_name}}
+                 </td>
+              <td>{{$hospital ->Location}}
+                 </td>
+                 <td>
+               </td>
+               <td>
+               </td>
+               <td>{{$hospital ->Contact}}
+               </td>
+               <td>
+               </td>
+               
             </tr>
+            @endforeach
         </table>
     </div>
 </body>

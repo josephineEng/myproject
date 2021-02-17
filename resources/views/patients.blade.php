@@ -55,7 +55,7 @@
     <h2>Patients</h2>
 
     <div class="main">
-
+  
         <br><br>
 
         <table>
@@ -70,18 +70,28 @@
                 <th> Hospital</th>
                 <th>  DateOut</th>
             </tr>
-
+            @foreach($patients as $patient)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <td>{{$patient ->id}}
+                 </td>
+              <td>{{$patient ->Name}}
+                 </td>
+              <td>{{$patient ->Gender}}
+                 </td>
+               <td>{{$patient ->Case_type}}
+               </td>
+               <td>{{$patient ->Category}}
+               </td>
+               <td>{{$patient ->DateIN}}
+               </td>
+               <td>{{$patient ->Officer}}
+               </td>
+               <td>{{$patient ->Hospital}}
+               </td>
+               <td>{{$patient ->DateOut}}
+               </td>
             </tr>
+            @endforeach
         </table>
 
         <br><br>
@@ -102,10 +112,10 @@
         </select>
         <br><br>
 
-        Toatl number of patients:<div class="total">
+        Total number of patients:<div class="total">
                     
-               
         <input type="text" name="pateintsNo">
+    
         <br><br>
     </div>
 

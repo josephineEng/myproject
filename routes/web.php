@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\controllers\health_officerController;
 use App\Http\controllers\fundController;
+use App\Http\controllers\patientController;
+use App\Http\Controllers\ChartJSController;
+use App\Http\controllers\general_hospitalController;
+
 /*
 /*
 |--------------------------------------------------------------------------
@@ -102,3 +106,7 @@ route::post('/update-health_officer',[health_officerController::class,'updatehea
 route::get('/edit-funds/{id}',[fundController::class,'editfund'])->name('edit.fund');
 route::get('/delete-funds/{id}',[fundController::class,'deletefund'])->name('delete.fund');
 route::post('/update-fund',[fundController::class,'updatefund'])->name('update.fund');
+
+route::get('/patients',[patientController::class,'patientslist'])->name('patients.list');
+route::get('/general hospitals',[general_hospitalController::class,'general_hospitallist'])->name('general_hospital.list');
+
