@@ -95,7 +95,10 @@
                
             </tr>
             @endforeach
-        </table>
+        </table><br><br>
+        <div> TOTAL NUMBER OF GENERAL HOSPITALS<br>
+        {{ $general_hospitals->count() }}
+        </div>
     </div>
 </body>
 </html>

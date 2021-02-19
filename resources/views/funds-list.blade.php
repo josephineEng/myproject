@@ -99,8 +99,9 @@
 <a style="background-color:grey" href="{{route('fund.add')}}">ADD FUNDS</a>
 <br><br>
         Total amount in treasury:
-        <input type="text" name="treasuryAmount">
+        {{ $funds->sum('Amount') }}
         <br><br>
+       
     </div>
     
 </body>

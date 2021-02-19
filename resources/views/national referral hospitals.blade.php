@@ -67,7 +67,7 @@
         </div>
         <br>
         <table>
-            <tr>
+            <tr><th>ID</th>
                 <th>Hospital name</th>
                 <th>Location</th>
                 <th>Number of health workers</th>
@@ -75,16 +75,28 @@
                 <th>Contact</th>
                 <th>Director</th>
             </tr>
-
+           @foreach($national as $hospital)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <td>{{$hospital ->id}}
+                 </td>
+              <td>{{$hospital ->Hospital_name}}
+                 </td>
+              <td>{{$hospital ->Location}}
+                 </td>
+                 <td>
+               </td>
+               <td>
+               </td>
+               <td>{{$hospital ->Director}}
+               </td>
+               <td>
+               </td>
+            @endforeach
             </tr>
-        </table>
+        </table><br><br>
+        <div> TOTAL NUMBER OF NATIONAL REFERRAL HOSPITALS<br>
+        {{ $national->count() }}
+        </div>
     </div>
 
 </body>

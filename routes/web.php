@@ -6,6 +6,8 @@ use App\Http\controllers\fundController;
 use App\Http\controllers\patientController;
 use App\Http\Controllers\ChartJSController;
 use App\Http\controllers\general_hospitalController;
+use App\Http\controllers\regionalController;
+use App\Http\controllers\nationalController;
 
 /*
 /*
@@ -109,4 +111,5 @@ route::post('/update-fund',[fundController::class,'updatefund'])->name('update.f
 
 route::get('/patients',[patientController::class,'patientslist'])->name('patients.list');
 route::get('/general hospitals',[general_hospitalController::class,'general_hospitallist'])->name('general_hospital.list');
-
+route::get('/regional referral hospitals',[regionalController::class,'regionallist'])->name('regional.list');
+route::get('/national referral hospitals',[nationalController::class,'nationallist'])->name('national.list');

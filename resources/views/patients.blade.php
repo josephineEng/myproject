@@ -114,9 +114,11 @@
 
         Total number of patients:<div class="total">
                     
-        <input type="text" name="pateintsNo">
-    
+        {{ $patients->count() }}
+        
         <br><br>
+        
+      
     </div>
 
 </body>

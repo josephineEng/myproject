@@ -87,8 +87,10 @@
                 </tr>
             @endforeach
             </table><br>
-            <a style="background-color:grey" href="{{route('health_officer.add')}}">ADD HEALTH_OFFICER</a>
-
+            <a style="background-color:grey" href="{{route('health_officer.add')}}">ADD HEALTH_OFFICER</a><br><br>
+            <div> TOTAL NUMBER OF HEALTH WORKERS<br>
+            {{ $health_officers->count() }}
+            </div>
             </div>
             </body>
 </html>

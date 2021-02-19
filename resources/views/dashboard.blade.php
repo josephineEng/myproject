@@ -83,6 +83,8 @@
         Total amount in treasury:
         <input type="text" name="treasuryAmount">
         <br><br>
+      
+        <br><br>
 
         <table>
             <tr>

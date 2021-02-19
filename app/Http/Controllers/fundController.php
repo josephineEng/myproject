@@ -41,6 +41,7 @@ class fundController extends Controller
   DB::table('funds')->where('id',$id)->delete();
   return back()->with('fund-delete','fund deleted');
     }
+   
   }
   
 

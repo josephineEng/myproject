@@ -66,7 +66,7 @@
         </div>
         <br>
         <table>
-            <tr>
+            <tr><th>ID</th>
                 <th>Hospital name</th>
                 <th>Location</th>
                 <th>Number of health workers</th>
@@ -74,16 +74,29 @@
                 <th>Contact</th>
                 <th>Superintendent</th>
             </tr>
-
+            @foreach($regional as $hospital)
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <td>{{$hospital ->id}}
+                 </td>
+              <td>{{$hospital ->Hospital_name}}
+                 </td>
+              <td>{{$hospital ->Location}}
+                 </td>
+                 <td>
+               </td>
+               <td>
+               </td>
+               <td>{{$hospital ->Contact}}
+               </td>
+               <td>
+               </td>
+               
             </tr>
-        </table>
+            @endforeach
+        </table><br><br>
+        <div> TOTAL NUMBER OF REGIONAL REFERRAL HOSPITALS<br>
+        {{ $regional->count() }}
+        </div>
     </div>
 
 </body>
