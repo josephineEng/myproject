@@ -94,22 +94,22 @@ Route::get('/image', function () {
 });
  
 
-route::get('/add-health_officer',[health_officerController::class,'addhealth_officer'])->name('health_officer.add');
-route::post('/add-health_officer',[health_officerController::class,'savehealth_officer'])->name('save.health_officer');
-route::get('/health_officer-list',[health_officerController::class,'health_officerlist'])->name('health_officer.list');
-route::get('/add-funds',[fundController::class,'addfund'])->name('fund.add');
-route::post('/add-funds',[fundController::class,'savefund'])->name('save.fund');
-route::get('/funds-list',[fundController::class,'fundlist'])->name('funds.list');
+Route::get('/add-health_officer',[health_officerController::class,'addhealth_officer'])->name('health_officer.add');
+Route::post('/add-health_officer',[health_officerController::class,'savehealth_officer'])->name('save.health_officer');
+Route::get('/health_officer-list',[health_officerController::class,'health_officerlist'])->name('health_officer.list');
+Route::get('/add-funds',[fundController::class,'addfund'])->name('fund.add');
+Route::post('/add-funds',[fundController::class,'savefund'])->name('save.fund');
+Route::get('/funds-list',[fundController::class,'fundlist'])->name('funds.list');
 
-route::get('/edit-health_officer/{id}',[health_officerController::class,'edithealth_officer'])->name('health_officer.edit');
-route::get('/delete-health_officer/{id}',[health_officerController::class,'deletehealth_officer'])->name('health_officer.delete');
-route::post('/update-health_officer',[health_officerController::class,'updatehealth_officer'])->name('update.health_officer');
+Route::get('/edit-health_officer/{id}',[health_officerController::class,'edithealth_officer'])->name('health_officer.edit');
+Route::get('/delete-health_officer/{id}',[health_officerController::class,'deletehealth_officer'])->name('health_officer.delete');
+Route::post('/update-health_officer',[health_officerController::class,'updatehealth_officer'])->name('update.health_officer');
 
-route::get('/edit-funds/{id}',[fundController::class,'editfund'])->name('edit.fund');
-route::get('/delete-funds/{id}',[fundController::class,'deletefund'])->name('delete.fund');
-route::post('/update-fund',[fundController::class,'updatefund'])->name('update.fund');
+Route::get('/edit-funds/{id}',[fundController::class,'editfund'])->name('edit.fund');
+Route::get('/delete-funds/{id}',[fundController::class,'deletefund'])->name('delete.fund');
+Route::post('/update-fund',[fundController::class,'updatefund'])->name('update.fund');
 
-route::get('/patients',[patientController::class,'patientslist'])->name('patients.list');
-route::get('/general hospitals',[general_hospitalController::class,'general_hospitallist'])->name('general_hospital.list');
-route::get('/regional referral hospitals',[regionalController::class,'regionallist'])->name('regional.list');
-route::get('/national referral hospitals',[nationalController::class,'nationallist'])->name('national.list');
+Route::get('/patients',[patientController::class,'patientslist'])->name('patients.list');
+Route::get('/general hospitals',[general_hospitalController::class,'general_hospitallist'])->name('general_hospital.list');
+Route::get('/regional referral hospitals',[regionalController::class,'regionallist'])->name('regional.list');
+Route::get('/national referral hospitals',[nationalController::class,'nationallist'])->name('national.list');
